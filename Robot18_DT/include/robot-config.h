@@ -5,6 +5,8 @@ extern brain Brain;
 extern controller Controller1; 
 extern smartdrive Drivetrain;
 
+brain Brain;
+
 // chassis
 extern motor RightDriveA; 
 extern motor RightDriveB; 
