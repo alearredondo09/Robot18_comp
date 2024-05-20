@@ -12,6 +12,7 @@
 
 #include "vex.h"
 #include "robot-config.h"
+#include "autonomous.h"
 #include "bits/stdc++.h"
 
 using namespace vex;
@@ -37,6 +38,11 @@ void pre_auton(void) {
   // All activities that occur before the competition starts
   // Example: clearing encoders, setting servo positions, ...
 }
+
+
+void autonomous(void) {
+  auton();
+}
 /*---------------------------------------------------------------------------*/
 /*                               display_info                                */
 /*                                                                           */
@@ -49,33 +55,6 @@ void display_info(){
   Brain.Screen.print("Hola! Estoy en el cerebro");
   //asdf
 }
-
-
-/*---------------------------------------------------------------------------*/
-/*                                                                           */
-/*                              Autonomous Task                              */
-/*                                                                           */
-/*  This task is used to control your robot during the autonomous phase of   */
-/*  a VEX Competition.                                                       */
-/*                                                                           */
-/*  You must modify the code to add your own robot specific commands here.   */
-/*---------------------------------------------------------------------------*/
-
-void autonomous(void) {
-  // ..........................................................................
-  // Insert autonomous user code here.
-  // ..........................................................................
-}
-
-/*---------------------------------------------------------------------------*/
-/*                                                                           */
-/*                              User Control Task                            */
-/*                                                                           */
-/*  This task is used to control your robot during the user control phase of */
-/*  a VEX Competition.                                                       */
-/*                                                                           */
-/*  You must modify the code to add your own robot specific commands here.   */
-/*---------------------------------------------------------------------------*/
 
 void usercontrol(void) {
   // User control code here, inside the loop
